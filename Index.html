@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yumago.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+            background-color: #e8e913;
+
+        }
+
+        #navbar::before {
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            height: 56px;
+            margin: 3px 6px;
+        }
+
+        ul {
+            display: flex;
+            font-family: 'baloo bhai', cursive;
+        }
+
+        li {
+
+            list-style: none;
+            font-size: 20px;
+        }
+
+        a {
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:hover {
+            color: hotpink;
+            background-color: lightpink;
+        }
+
+        #home {
+            padding: 3px 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 332px;
+            width: 1120px;
+            background: url(bg1.jpg) no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.80;
+        }
+
+        .h1 {
+            font-size: 100px;
+            padding: 12px;
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Bree serif', serif;
+
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Bree serif', serif;
+        }
+
+        #btn {
+            cursor: pointer;
+            font-size: 100%;
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgb(197, 24, 76);
+            color: white;
+            margin: 17px;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .h-first {
+            font-size: 3.8rem;
+            padding: 12px;
+            font-family: 'Bree serif', serif;
+        }
+
+        .h-second {
+            font-size: 2.3rem;
+            padding: 12px;
+            margin-left: 530px;
+            font-family: 'Bree serif', serif;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        .box {
+            border: 2px solid brown;
+            height: 300px;
+            margin-top: -16px;
+            margin: 3px 6px;
+            padding: 34px;
+            border-radius: 23px;
+            background-color: rgb(214, 147, 59);
+        }
+
+        .box img {
+            height: 160px;
+            width: auto;
+            margin: auto;
+            display: block;
+
+        }
+
+        .text-center {
+            margin-left: 30px;
+            padding-left: 3px;
+        }
+
+        .h-first-mid {
+            margin-left: 640px;
+            margin-top: 350px;
+            font-size: 1.9rem;
+        }
+
+        .h-second-mid {
+            margin-left: 120px;
+            color: black;
+            background-color: rgb(214, 147, 59);
+            ;
+        }
+
+        .nav input {
+            border: 2px solid brown;
+            border-radius: 20px;
+        }
+
+        .h-second-mid:hover {
+            cursor: pointer;
+        }
+
+
+
+        #client-section::before {
+            content: '';
+            position: absolute;
+            background: url(bg.jpg);
+            width: 100%;
+            height: 270px;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 344px;
+            margin-top: -53px;
+        }
+
+        #clients img {
+            height: 120px;
+        }
+
+        #clients-items {
+            padding: 44px;
+        }
+
+        .h-first-mid-2 {
+            margin-left: 640px;
+            margin-top: 350px;
+            font-size: 1.9rem;
+        }
+
+        #client-section {
+            margin-top: -315px;
+        }
+
+        .items {
+            height: 163;
+            width: 127;
+        }
+
+        .search {
+            border: 1px solid rgb(51, 43, 43);
+            border-radius: 12px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="yumago.com">
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="item"><a href="">Services</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="item"><a href="">About Us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="item"><a href="">Contact Us </a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="item"><a href="feedback.html">Feedback</a></li>
+
+        </ul>
+        <div class="search">
+            <input type="search" placeholder="Search🔍">
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Urdu</option>
+            </select>
+
+
+    </nav>
+    <div id="home">
+        <h1 class="h-first">Welcome to Yumago</h1>
+        <p>
+            Order from your favorite restaurants & track on the go, with the all-new Yumago.Experience Yumago's superfast delivery for food delivered fresh & on time.
+         </p>
+        <p>
+            Stay Home and Order to Your Doorstep. </p>
+        <button id="btn"> Order Now</button>
+
+    </div>
+    <section class="container">
+        <h1 class="h-first-mid"><b>Our Services</b></h1>
+        <div id="services">
+            <div class="box">
+                <img src="img1.png">
+                <h2 class="h-second-mid">Order Now</h2>
+                <p class="text-center">Order in for yourself or for the group, with no
+                     restrictions on order value.</p>
+            </div>
+            <div class="box">
+                <img src="img2.png">
+                <h2 class="h-second-mid">Order Now</h2>
+                <p class="text-center">Know where your order is at all times, from the restaurant to your doorstep.</p>
+            </div>
+            <div class="box">
+                <img src="burger.png.png">
+                <h2 class="h-second-mid">Order Now
+                </h2>
+                <p class="text-center">Experience Swiggy's superfast delivery for food delivered fresh & on time.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-first-mid">Our Clients</h1>
+        <div id="clients">
+            <div class="client-items">
+                <img src="g1.png" alt="Apple">
+            </div>
+            <div class="client-items">
+                <img src="g2.png" alt="Apple">
+            </div>
+            <div class="client-items">
+                <img src="g3.png" alt="Apple">
+            </div>
+            <div class="client-items">
+                <img src="g4.png" alt="Apple">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
